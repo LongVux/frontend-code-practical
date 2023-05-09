@@ -1,29 +1,11 @@
-# README #
+Talent First AI - Front-end Code Practical Test
+===============================================
 
-This README would normally document whatever steps are necessary to get your application up and running.
+This repository is to be used as a base to begin writing you submission to the front-end code practical test.
 
-### What is this repository for? ###
+This repository contains two sub-projects:
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+* `mock_api`: A mock API for your webapp to consume. See the [README.md](./mock_api/README.md) in that directory for more details on getting starting and using it.
+* `webapp`: An empty project to write your webapp submission.
 
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+You will be emailed the requirements for writing the webapp at the start of your allocated exam time.
