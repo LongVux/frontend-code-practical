@@ -10,19 +10,19 @@ Getting Started
 
 1. Ensure you have a compatible Node.js (and NPM) version installed. This code was originally written using Node.js v20.
 
-1. Install dependencies
+2. Install dependencies
 
    ```sh
    npm ci
    ```
 
-1. Start API server
+3. Start API server
 
    ```sh
    npm start
    ```
 
-1. The mock API server will now have started with base address <http://127.0.0.1:3000>. The server has CORS enabled.
+4. The mock API server will now have started with base address <http://127.0.0.1:3000>. The server has CORS enabled.
 
 API Documentation
 -----------------

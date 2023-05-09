@@ -11,7 +11,7 @@ import index_router from './routes/index.js';
 import api_router from './routes/api.js';
 
 
-var app = express();
+let app = express();
 
 app.use(logger);
 app.use(cors());
@@ -21,5 +21,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index_router);
 app.use('/api', api_router);
+
 
 export default app;

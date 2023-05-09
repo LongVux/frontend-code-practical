@@ -2,7 +2,6 @@ import path from 'path';
 import url from 'url';
 import fs from 'fs';
 import express from 'express';
-var router = express.Router();
 
 const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -10,6 +9,8 @@ const __dirname = path.dirname(__filename);
 const users_data_filepath = path.join(__dirname, '../data/users.json');
 const users_data = JSON.parse(fs.readFileSync(users_data_filepath).toString());
 
+
+let router = express.Router();
 
 // GET list of users
 router.get('/users', function(req, res, next) {
@@ -26,5 +27,6 @@ router.get('/users/:id', function(req, res, next) {
   }
   res.json(users_matched[0]);
 });
+
 
 export default router;

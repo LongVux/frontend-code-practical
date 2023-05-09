@@ -1,12 +1,13 @@
-import app from './app.js';
 import http from 'http';
+import app from './app.js';
 
-// Enforce only IPv4
-const ipv6_on = process.env.IPV6_ON || false;
 
-// Get port from environment and store in Express.
-let port = normalizePort(process.env.PORT || '3000');
+// Config
+const ipv6_on = process.env.IPV6_ON || false;  // Enable using IPv6
+const port = normalizePort(process.env.PORT || '3000');  // Port to listen on
+
 app.set('port', port);
+
 
 // Create HTTP server.
 let server = http.createServer(app);
@@ -42,7 +43,7 @@ function onListening() {
   if (typeof addr === 'string') {
     bind = `pipe ${addr}`
   } else {
-	bind = `port ${addr.port}`
+    bind = `port ${addr.port}`
     if (addr.family === 'IPv6') {
       url = `http://[::1]:${addr.port}`
     } else {
