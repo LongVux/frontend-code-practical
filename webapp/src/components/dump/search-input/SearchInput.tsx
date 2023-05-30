@@ -3,16 +3,16 @@ import { Button } from "../button/Button";
 import "./SearchInput.css";
 
 export interface SearchInputProps {
-  onSearch: (searchKey: string) => Promise<any>;
+  onSearch?: (searchKey: string) => Promise<any>;
 }
 
 export const SearchInput = (props: SearchInputProps) => {
   const [searchKey, setSearchKey] = useState<string>("");
   const [loading, setLoading] = useState(false);
 
-  const handleSearch = () => {
+  const handleSearch = (keyword: string) => {
     setLoading(true);
-    props.onSearch(searchKey).finally(() => setLoading(false));
+    props.onSearch && props.onSearch(keyword).finally(() => setLoading(false));
   };
 
   return (
@@ -25,12 +25,16 @@ export const SearchInput = (props: SearchInputProps) => {
           setSearchKey(e.target.value.trim());
         }}
       />
-      <Button label="search" onClick={() => handleSearch()} loading={loading} />
+      <Button
+        label="search"
+        onClick={() => handleSearch(searchKey)}
+        loading={loading}
+      />
       <Button
         label="clear"
         onClick={() => {
           setSearchKey("");
-          handleSearch();
+          handleSearch("");
         }}
         loading={loading}
       />

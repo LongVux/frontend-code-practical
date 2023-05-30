@@ -1,0 +1,20 @@
+.user-profile-collection-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+.user-profile-collection-header > span {
+    display: block;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.user-profile-collection-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}

@@ -12,6 +12,7 @@
     border: none;
     border: black 1px solid;
     cursor: pointer;
+    width: fit-content;
 }
 
 .button:disabled {

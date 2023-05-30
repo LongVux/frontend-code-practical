@@ -1,0 +1,13 @@
+.page-layout-main,
+.page-layout-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.page-layout {
+    padding: 2rem;
+}
+
+.page-layout > hr {
+    margin: 2rem 0px 1rem 0px;
+}

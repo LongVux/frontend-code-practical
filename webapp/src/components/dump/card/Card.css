@@ -1,8 +1,11 @@
 .card {
     border: darkgray 2px solid;
     padding: 1rem;
-
     width: fit-content;
+}
+
+.card > hr {
+    margin: 1rem 0rem;
 }
 
 .card-header {
@@ -11,15 +14,19 @@
     align-items: center;
 }
 
+.card-header > span {
+    font-size: x-large;
+}
+
 .card-image-holder {
     border: darkgray 2px solid;
     border-radius: 100%;
     overflow: hidden;
-    height: 15rem;
-    width: 15rem;
+    height: 10rem;
+    width: 10rem;
 }
 
 .card-image-holder > * > img {
-    height: 15rem;
-    width: 15rem;
+    height: 10rem;
+    width: 10rem;
 }

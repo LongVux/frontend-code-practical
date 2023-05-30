@@ -8,12 +8,12 @@ export interface FieldProps {
 
 export const Field = (props: FieldProps) => {
   return (
-    <div className="field" style={{ width: `${props.remWidth}rem` }}>
+    <div className="field">
       {props.icon}
 
-      <div className="field-title">
-        <span>{props.title}</span>
-      </div>
+      <span className="field-title" style={{ width: `${props.remWidth}rem` }}>
+        {props.title}
+      </span>
     </div>
   );
 };

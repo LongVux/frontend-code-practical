@@ -1,9 +1,14 @@
 .field {
     display: flex;
+    width: 100%;
+    flex-wrap: wrap;
     justify-content: left;
     align-items: center;
     gap: 0.5rem;
 }
 
 .field-title {
+    display: block;
+    width: 100%;
+    word-wrap: break-word;
 }

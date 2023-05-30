@@ -1,4 +1,5 @@
 import axios from "axios";
+import { UserProfile } from "../models/UserProfile";
 
 // config request
 const axiosInstance = axios.create({
@@ -17,11 +18,11 @@ axios.interceptors.response.use(
 );
 
 export const getUsers = () => {
-  return axiosInstance.get(`/api/users`);
+  return axiosInstance.get<UserProfile[]>(`/api/users`);
 };
 
 export const getUserById = (userId: number) => {
-  return axiosInstance.get(`/api/users/${userId}`);
+  return axiosInstance.get<UserProfile>(`/api/users/${userId}`);
 };
 
 export const getProfileImageByUrl = (url: string) => {

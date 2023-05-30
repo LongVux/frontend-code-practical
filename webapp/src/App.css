@@ -2,3 +2,11 @@
     padding: 0.5rem 1rem;
     border: darkgray 1px solid;
 }
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
