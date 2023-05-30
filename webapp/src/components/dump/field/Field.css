@@ -1,0 +1,9 @@
+.field {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.field-title {
+}

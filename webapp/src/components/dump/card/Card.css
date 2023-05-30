@@ -1,0 +1,25 @@
+.card {
+    border: darkgray 2px solid;
+    padding: 1rem;
+
+    width: fit-content;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-image-holder {
+    border: darkgray 2px solid;
+    border-radius: 100%;
+    overflow: hidden;
+    height: 15rem;
+    width: 15rem;
+}
+
+.card-image-holder > * > img {
+    height: 15rem;
+    width: 15rem;
+}
