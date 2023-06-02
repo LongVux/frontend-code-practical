@@ -1,5 +1,3 @@
-I can try to rewrite the readme text for you, but I cannot guarantee that it will be perfect. Here is my attempt:
-
 # A Practical Frontend Project by Nguyen Long Vu
 
 This project uses [Create React App](https://github.com/facebook/create-react-app) to bootstrap the frontend code.
